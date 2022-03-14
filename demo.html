@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>tìm và in ra 30 số tự nhiên đầu chia hết cho 7</h1>
+<script>
+    let count = 0;
+    let total = "";
+    for (let n =7; count < 30; n++) {
+        if (n % 7 === 0) {
+            count++;
+            total +=count+" : "+n+"<br>";
+        }
+    }document.write(total)
+</script>
+</body>
+</html>

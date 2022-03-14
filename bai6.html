@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Tổng 30 số tự nhiên đầu chia hết cho 7</h1>
+<script>
+    let count = 1;
+    let total = 0;
+    for (let n =7; count <= 30; n++) {
+        if (n % 7 === 0) {
+            total += n;
+            count++;
+        }
+    }   document.write("Tổng: "+total);
+    // Bài tập số tự nhiên chia hết cho 7
+    // for (; count <= 30;) {
+    //     if (n === 2) {
+    //         n++;
+    //         count++;
+    //     } else {
+    //         let snt = true;
+    //         for (let i = 2; i < n; i++) {
+    //             if (n % i === 0) {
+    //                 snt = false;
+    //                 n++;
+    //                 break;
+    //             }
+    //         }
+    //         if (snt === true) {
+    //             snt = 0;
+    //             if (n % 7 === 0)
+    //                 total = total + "" + n;
+    //             n++;
+    //             count++;
+    //
+    //         }
+    //     }
+    // }
+    // document.write(total);
+</script>
+</body>
+</html>

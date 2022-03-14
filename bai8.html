@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="choi()">Chơi</button>
+<script>
+    function choi() {
+        let num = +prompt('Nhập số bạn chon trong khoảng');
+        let i = Math.floor(Math.random() * num) + 1;
+        let count = 0;
+        for (; count <=3; count++) {
+            let num1 = +prompt('Nhập số bạn chọn')
+            if (count <3) {
+                if (i === num1) {
+                    alert('Bạn đã thắng');
+                    break;
+                } else if (i < num1) {
+                    alert('giá trị bạn chọn lớn hơn');
+                } else {
+                    alert('giá trị bạn chọn nhỏ hơn');
+                }
+            } else {
+                alert('bạn nhập quá 3 lần');
+            }
+
+        }
+    }
+</script>
+</body>
+</html>
